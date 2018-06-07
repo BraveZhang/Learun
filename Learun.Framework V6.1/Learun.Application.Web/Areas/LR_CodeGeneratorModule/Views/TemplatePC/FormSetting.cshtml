@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "表单字段设置";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据表选择<font face="宋体">*</font></div>
+        <div id="tableName" isvalid="yes" checkexpession="notNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段选择<font face="宋体">*</font></div>
+        <div id="fieldId" isvalid="yes" checkexpession="notNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段名称<font face="宋体">*</font></div>
+        <input id="fieldName" type="text" class="form-control" isvalid="yes" checkexpession="notNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段验证</div>
+        <div id="validator"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">所占比例<font face="宋体">*</font></div>
+        <div id="proportion" isvalid="yes" checkexpession="NotNull">
+            <ul>
+                <li data-value="1">1</li>
+                <li data-value="2">1/2</li>
+                <li data-value="3">1/3</li>
+                <li data-value="4">1/4</li>
+                <li data-value="6">1/6</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">字段类型<font face="宋体">*</font></div>
+        <div id="type" isvalid="yes" checkexpession="NotNull">
+            <ul>
+                <li data-value="text">文本框</li>
+                <li data-value="textarea">文本区域</li>
+                <li data-value="datetime">日期框</li>
+                <li data-value="select">下拉框</li>
+                <li data-value="radio">单选框</li>
+                @*<li data-value="checkbox">多选框</li>*@
+                <li data-value="file">文件上传</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据来源</div>
+        <div id="dataSource"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据选项</div>
+        <div id="dataItemCode"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">数据选项</div>
+        <div id="dataSourceId"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">是否只读<font face="宋体">*</font></div>
+        <div id="isRead" isvalid="yes" checkexpession="NotNull">
+            <ul>
+                <li data-value="1">否</li>
+                <li data-value="2">是</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">排序号<font face="宋体">*</font></div>
+        <input id="sort" type="text" class="form-control" isvalid="yes" checkexpession="isNum" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/FormSetting.js")
+

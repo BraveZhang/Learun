@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "炫动版风格 - 产品体验";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+@Html.AppendCssFile("/Views/Home/AdminWindos/index.css")
+<div class="lr-frame-top">
+    <a class="lr-logo-title"><i class="iconfont icon-logo"></i><span>.</span> 敏捷开发框架</a>
+</div>
+<div class="lr-windows-start" id="lr_windows_start" title="开始菜单"><i class="fa fa-windows"></i></div>
+<div class="lr-applist-btn" id="lr_applist_btn">应用列表</div>
+<div class="lr-applist-content" id="lr_applist_content">
+    <div class="lr-applist-slidebox-slider">
+        <ul class="lr-applist-slidebox-slider-content"></ul>
+    </div>
+    <div class="lr-applist-slidebox" id="lr_applist_slidebox"></div>
+</div>
+@Html.AppendJsFile("/Views/Home/AdminWindos/index.js")
+
+
+
+

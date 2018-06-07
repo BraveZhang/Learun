@@ -1,0 +1,388 @@
+﻿/*
+ * 版 本 Learun-ADMS V6.1.6.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2017 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.16
+ * 描 述：window窗口皮肤	
+ */
+.lr-logo-title {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.lr-logo-title .iconfont {
+    position: relative;
+    font-size: 24px;
+    color: #3498DB;
+    top: 3px;
+}
+    .lr-logo-title span {
+        position: relative;
+        font-size: 50px;
+        color: #3498DB;
+        top: -3px;
+        left: 3px;
+        line-height: 10px;
+    }
+/*顶部*/
+.lr-frame-top {
+    background:#2e99d4;
+}
+/*logo标题*/
+.lr-logo-title {
+    color:#fff;
+    left:10px;
+}
+.lr-logo-title:hover {
+    color:#fff;
+}
+.lr-logo-title .iconfont {
+    color: #fff;
+}
+.lr-logo-title span {
+    color: #fff;
+}
+
+
+/*菜单*/
+.lr-frame-menu
+{
+    right: 2px;
+    left: inherit;
+    top:73px;
+    height:100%;
+    height:calc(100% - 73px);
+    width:100%;
+    max-height:450px;
+    max-width:380px;
+    z-index:4;
+    background-color:#F7FEFF;
+    border-radius:5px;
+    box-shadow: #D2D8D9 0px 0px 10px 1px;
+    display:none;
+}
+.lr-frame-menu-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    filter: alpha(opacity=1);
+    opacity: 0.01;
+    -moz-opacity: 0.01;
+    z-index:-1;
+}
+.lr-frame-menu>em {
+    display: block;
+    position:absolute;
+    top: -8px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border-width: 0 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+}
+.lr-frame-menu-wrap {
+    position:absolute;
+    width: 160px;
+    background-color: #3C5E80;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top:10px;
+}
+.lr-first-menu-list > li > .lr-menu-item {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px 0px 20px;
+}
+.lr-first-menu-list > li > .lr-menu-item:hover {
+    background: #375069;
+}
+.lr-first-menu-list> li > .lr-menu-item > .lr-menu-item-arrow{
+    display: block;
+    position: absolute;
+    text-indent: 0;
+    font-weight: bold;
+}
+.lr-first-menu-list > li.active .lr-menu-item-arrow{
+    width: 0;
+    height: 0;
+    right:0;
+    top: 50%;
+    margin-top: -8px;
+    text-indent: -99999px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: transparent;
+    border-right-color: #f7feff;
+    border-left: none;
+}
+
+
+.lr-second-menu-wrap {
+    position:absolute;
+    top:0;
+    right:0;
+    width: 220px;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top:10px;
+}
+.lr-second-menu-list .lr-menu-item {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    padding: 0px 15px 0px 20px;
+    cursor:pointer;
+}
+.lr-second-menu-list .lr-menu-item:hover {
+    background-color: #dfe5e6;
+}
+.lr-three-menu-list .lr-menu-item {
+    padding-left:50px;
+}
+.lr-second-menu-list  .lr-menu-item-arrow .fa-angle-left {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+}
+.lr-second-menu-list .open  .lr-menu-item-arrow .fa-angle-left {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+/*tabs条*/
+.lr-frame-tabs {
+    padding:0px 55px 0px 88px;
+    background:#2e99d4;
+}
+.lr-frame-tabs-wrap {
+    height:30px;
+}
+.lr-frame-tabItem {
+    height:29px;
+    line-height:29px;
+    background:#2e99d4;
+    color:#fff;
+    border-radius:4px 4px 0 0;
+}
+.lr-frame-tabItem i {
+    display:none;
+}
+
+.lr-frame-tabItem.active {
+    border-bottom:0px;
+    height:30px;
+    background:#F7FEFF;
+    color:#2e99d4;
+    font-weight:bold;
+}
+.lr-frame-tabItem .reomve{
+    top: 8px;
+    right: 4px;
+}
+/*功能窗口*/
+.lr-frame-main {
+    padding:70px 0px 0px 0px;
+    background:#F7FEFF;
+}
+/*个人设置和头像*/
+.lr-frame-personCenter {
+    top:0;
+    right:10px;
+    height:40px;
+    line-height:40px;
+}
+.lr-frame-personCenter > a {
+    color:#fff;
+}
+.lr-frame-personCenter >.dropdown-toggle> img {
+    border: 2px solid #fff;
+}
+/*全屏按钮*/
+.lr_frame_fullscreen a {
+    color: #fff;
+}
+.lr_frame_fullscreen a:hover {
+    color: #96CCE9;
+}
+/*菜单列的第三方滚动条样式*/
+.sidebar-menu-left .mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical,
+.sidebar-menu-left .mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical
+{
+    left:0;
+}
+.mCS-minimal-dark.mCSB_scrollTools_horizontal {
+    top:24px;
+}
+
+
+/*炫动版独有*/
+/*应用列表按钮*/
+.lr-applist-btn {
+    position:absolute;
+    left:10px;
+    top:41px;
+    background: #F7FEFF;
+    padding:0px 15px;
+    line-height:29px;
+    height:29px;
+    color: #2e99d4;
+    font-weight: bold;
+    border-radius:4px 4px 0 0;
+    cursor:pointer;
+    z-index:3;
+}
+.lr-applist-btn.off {
+    background: #2e99d4;
+    color: #fff;
+    font-weight:initial;
+}
+/*开始菜单按钮*/
+.lr-windows-start {
+    position:absolute;
+    top:40px;
+    right:35px;
+    height:29px;
+    line-height:29px;
+    z-index:3;
+    color:#fff;
+    cursor:pointer;
+}
+.lr-windows-start:hover {
+    color:#96CCE9;
+}
+/*应用列表*/
+.lr-applist-content {
+    position:absolute;
+    padding:70px 0px 38px 0px;
+    height:100%;
+    width:100%;
+    z-index:1;
+}
+
+.lr-applist-slidebox-slider {
+    position:absolute;
+    left:0;
+    bottom:15px;
+    height: 23px;
+    width: 100%;
+}
+.lr-applist-slidebox-slider-content {
+    display: table; /*重点就是这个属性,这个样式会告知浏览器当前元素的宽度,采用最小的宽度.不是默认全宽*/
+    margin: 0 auto; 
+}
+.lr-applist-slidebox-slider li {
+    position:relative;
+    float:left;
+    width: 35px;
+    height: 23px;
+    line-height: 20px;
+    border: solid 1px #475059;
+    border-right: none;
+    background-color: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    cursor: pointer;
+    text-align:center;
+}
+.lr-applist-slidebox-slider li:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.lr-applist-slidebox-slider li:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: solid 1px #ccc;
+}
+
+.lr-applist-slidebox-slider li i {
+    color: #fff;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    font-size: 13px;
+    vertical-align: middle;
+}
+.lr-applist-slidebox-slider li:first-child i {
+    margin-left: 3px;
+}
+.lr-applist-slidebox-slider li.active i {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+.lr-applist-slidebox {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.lr-applist-slidebox ul {
+    display:none;
+}
+.lr-applist-slidebox ul.active {
+    display:block;
+}
+
+.lr-applist-slidebox .appItem {
+    position:relative;
+    float: left;
+    width: 130px;
+    padding: 20px 10px 10px 10px;
+    margin:5px 15px 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.lr-applist-slidebox .appItem:hover {
+    background-color: #dfe5e6;
+}
+
+.lr-applist-slidebox .appItem .icon {
+    position:relative;
+    width: 80px;
+    height: 80px;
+    
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.lr-applist-slidebox .appItem .icon i {
+    text-align: center;
+    line-height: 80px;
+    font-size: 45px;
+    color: #fff;
+}
+
+.lr-applist-slidebox .appItem .icon-text {
+    position:relative;
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 80px;
+    height: 20px;
+    line-height:20px;
+    text-align: center;
+    background-color: #dfe5e6;
+    border-radius: 20px;
+    color:#666;
+}
+
+
+
+
+
+
+
+

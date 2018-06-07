@@ -1,0 +1,285 @@
+﻿/*
+ * 版 本 Learun-ADMS V6.1.6.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2017 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.16
+ * 描 述：手风琴风格皮肤样式表	
+ */
+.lr-logo-title {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+    .lr-logo-title .iconfont {
+        position: relative;
+        font-size: 24px;
+        color: #3498DB;
+        top: 3px;
+    }
+
+    .lr-logo-title span {
+        position: relative;
+        font-size: 50px;
+        color: #3498DB;
+        top: -3px;
+        left: 3px;
+        line-height: 10px;
+    }
+/*顶部*/
+.lr-frame-top {
+    height:50px;
+    background:#373d41;
+}
+/*logo标题*/
+.lr-logo-title {
+    left:10px;
+    line-height:45px;
+    color:#fff!important;
+}
+.lr-logo-title .iconfont {
+    color:#fff;
+}
+.lr-logo-title span {
+    color: #fff;
+}
+/*菜单*/
+.lr-frame-menu {
+    width:200px;
+    height:100%;
+    background: #42485b;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    z-index:1;
+    padding:80px 0px 50px 0px;
+}
+
+.lr-frame-menu .lr-menu-item
+{
+    height: 36px;
+    line-height:36px;
+    padding:0px 15px;
+    color: #fff;
+    font-size: 15px;
+}
+.lr-first-menu-list>li>.lr-menu-item:hover {
+    background: #00C1DE;
+}
+
+
+.lr-frame-menu  .lr-menu-item-icon{
+    font-size: 14px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    width: 17px;
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-bottom: 1px;
+}
+.lr-frame-menu  .lr-menu-item-arrow {
+    position:absolute;
+    right:10px;
+    line-height:36px;
+}
+
+
+
+
+.lr-second-menu-list,
+.lr-three-menu-list{
+    position: relative;
+    width: 100%;
+    padding-top:5px;
+    background-color:#333744;
+}
+.lr-second-menu-list .lr-menu-item {
+    padding-left:40px;
+    padding-right:15px;
+}
+.lr-second-menu-list .lr-menu-item:hover {
+    background-color: #4A5064;
+}
+.lr-three-menu-list .lr-menu-item {
+    padding-left:60px;
+}
+.lr-menu-item.open >.lr-menu-item-arrow>i {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+/*tabs条*/
+.lr-frame-tabs {
+    top:0;
+    height:50px;
+    z-index:2;
+    padding:0px 60px 0px 260px;
+}
+.lr-frame-tabItem:first-child {
+    border-left: 1px solid #2a2f32;
+}
+.lr-frame-tabItem {
+    height:50px;
+    line-height:50px;
+    border-right: 1px solid #2a2f32;
+    color:#fff;
+    margin-left:0px;
+}
+.lr-frame-tabItem.active {
+    background:#2a2f32;
+}
+.lr-frame-tabItem .reomve{
+    top: 19px;
+    right: 4px;
+   
+}
+/*功能窗口*/
+.lr-frame-main {
+   padding:50px 0px 0px 200px;
+   background:#eaedf1;
+}
+/*个人设置和头像*/
+.lr-frame-personCenter {
+    bottom:0;
+    left:0;
+    height:50px;
+    width:200px;
+    line-height:50px;
+    padding:0px 10px;
+}
+.lr-frame-personCenter >.dropdown-toggle {
+    height:100%;
+    line-height:49px;
+    border-top:1px solid #63656B;
+    color:#a6acbc;
+}
+.lr-frame-personCenter >.dropdown-toggle> img {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 8px 10px 0px 0px;
+}
+.lr-frame-personCenter .dropdown-menu {
+    top:-120px;
+    left:10px;
+    border: 1px solid #3f4a60;
+    background: #3f4a60;
+}
+.lr-frame-personCenter .dropdown-menu>li>a
+{
+    color:#a3b1cc;
+}
+.lr-frame-personCenter .dropdown-menu>li>a:hover
+{
+    background: #394458;
+    color:#fff;
+}
+.lr-frame-personCenter .divider {
+    background-color: #63656B;
+}
+
+/*风尚版独有-菜单缩进按钮*/
+.lr-frame-menu-btn {
+    position:absolute;
+    left:0;
+    top:50px;
+    height:30px;
+    line-height:30px;
+    width:200px;
+    text-align:center;
+    font-size:14px;
+    cursor:pointer;
+    color:#aeb9c2;
+    background-color:#4A5064;
+    z-index:2;
+}
+.lr-frame-menu-btn:hover {
+    background-color:#4A5064;
+    color:#fff;
+}
+
+/*全屏*/
+.lr_frame_fullscreen {
+    top:0px;
+    right:0px;
+    height:50px;
+    width:30px;
+    line-height:50px;
+    text-align:center;
+    z-index:3;
+}
+.lr_frame_fullscreen a {
+    font-size:14px;
+    color:#c1c3c9;
+}
+.lr_frame_fullscreen a:hover {
+    color:#fff;
+}
+
+/*菜单列的第三方滚动条样式*/
+.mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical,
+.mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical
+{
+    right:0;
+}
+.mCS-minimal-dark.mCSB_scrollTools_horizontal {
+    top:40px;
+}
+
+
+/*菜单关闭后显示样式*/
+.lr-menu-closed .lr-frame-menu {
+    width:50px;
+}
+.lr-menu-closed .lr-frame-menu-wrap span, 
+.lr-menu-closed .lr-frame-menu-wrap .lr-menu-item-arrow,
+.lr-menu-closed .lr-meun-had>a
+{
+    display:none;
+}
+.lr-menu-closed .lr-frame-menu-wrap a {
+    padding:0px;
+    text-align:center;
+}
+.lr-menu-closed .lr-frame-menu-wrap .lr-three-menu-list {
+    display:block;
+}
+.lr-menu-closed .lr-frame-menu-wrap .lr-menu-item-icon {
+    margin:0px;
+}
+.lr-menu-closed .lr-frame-menu-btn{
+   -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    width:50px;
+}
+.lr-menu-closed .lr-frame-personCenter {
+    width:50px;
+    padding:0px;
+}
+.lr-menu-closed .lr-frame-personCenter .dropdown-menu{
+    padding:0px;
+   
+}
+.lr-menu-closed .lr-frame-personCenter>.dropdown-toggle {
+    line-height:50px;
+    text-align:center;
+}
+.lr-menu-closed .lr-frame-personCenter>.dropdown-toggle>img {
+    float:initial;
+    margin:0;
+}
+.lr-menu-closed .lr-frame-personCenter > .dropdown-toggle > span {
+    display:none;
+}
+.lr-menu-closed .lr-frame-main {
+    padding:50px 0px 0px 50px;
+}

@@ -1,0 +1,59 @@
+.lr-flow-list .lr-list-item {
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom:5px;
+    line-height: 1;
+}
+.lr-flow-list .lr-list-item .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    padding-top:10px;
+}
+
+        .lr-flow-list .lr-list-item .left .circle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 50%;
+        }
+
+    .lr-flow-list .lr-list-item .middle {
+        position:relative;
+        width: 100%;
+    }
+
+        .lr-flow-list .lr-list-item .middle .title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .lr-flow-list .lr-list-item .middle .text {
+            color: #999;
+            font-size: 12px;
+            line-height: 20px;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .lr-flow-list .lr-list-item .middle .status {
+            font-size: 12px;
+            margin-top: 2px;
+            color: #e8a758;
+        }
+
+    .lr-flow-list .lr-list-item .right {
+        position:absolute;
+        top:10px;
+        right:15px;
+        font-size: 12px;
+        color: #999;
+    }

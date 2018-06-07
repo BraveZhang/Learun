@@ -1,0 +1,281 @@
+﻿/*
+ * 版 本 Learun-ADMS V6.1.6.0 力软敏捷开发框架(http://www.learun.cn)
+ * Copyright (c) 2013-2017 上海力软信息技术有限公司
+ * 创建人：力软-前端开发组
+ * 日 期：2017.03.16
+ * 描 述：飞扬版样式	
+ */
+.lr-frame-top {
+    z-index: 3;
+}
+.lr-logo-title {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+    .lr-logo-title .iconfont {
+        position: relative;
+        font-size: 24px;
+        color: #3498DB;
+        top: 3px;
+    }
+    .lr-logo-title span {
+        position: relative;
+        font-size: 50px;
+        color: #3498DB;
+        top: -3px;
+        left: 3px;
+        line-height: 10px;
+    }
+/*顶部*/
+.lr-frame-top {
+    height:46px;
+    background:#4176e7;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#4176e7', endColorStr='#2e99d4', gradientType='1');
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#4176e7', endColorStr='#2e99d4', gradientType='1');
+    background: -webkit-linear-gradient(left bottom, #4176e7, #2e99d4);
+    background: -moz-linear-gradient(left bottom, #4176e7, #2e99d4);
+    background: -o-linear-gradient(left bottom, #4176e7, #2e99d4);
+   
+    background-size: cover;
+}
+/*logo标题*/
+.lr-logo-title {
+    color:#fff;
+    line-height: 45px;
+    left:10px;
+}
+.lr-logo-title:hover {
+    color:#fff;
+}
+.lr-logo-title .iconfont {
+    color: #fff;
+}
+.lr-logo-title span {
+    color: #fff;
+}
+/*菜单*/
+.lr-first-menu-list {
+     white-space: nowrap;
+}
+.lr-frame-menu
+{
+    height:46px;
+    width:100%;
+    z-index:3;
+    padding:0px 143px 0px 250px;    
+}
+.lr-frame-menu  li {
+    width:auto;
+    white-space: nowrap;
+    display:inline-block;
+}
+.lr-frame-menu  .lr-menu-item {
+    height:100%;
+    line-height:46px;
+    color:#d0eae9;
+    padding: 0px 10px 0px 26px;
+}
+.lr-first-menu-list > li > .lr-menu-item.active,
+.lr-first-menu-list > li > .lr-menu-item:hover {
+    color:#fff;
+}
+.lr-first-menu-list > li > .lr-menu-item > .lr-menu-item-icon {
+    display:block;
+    position:absolute;
+    top: 16px;
+    left: 8px;
+}
+
+
+.lr-first-menu-list > li > .lr-menu-item.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    bottom: 1px\9;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.lr-second-menu-wrap {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:180px;
+    background-color:#FBFBFB;
+    border-right: 1px solid #e1e2e2;
+    z-index:2;
+    padding-top:76px;
+}
+.lr-second-menu-list .lr-menu-item {
+    height: 40px;
+    line-height: 40px;
+    color: #323437;
+    padding: 0px 0px 0px 20px;
+    font-size:14px;
+}
+.lr-second-menu-list .lr-menu-item:hover {
+    background-color: #f3f4f4;
+}
+.lr-three-menu-list .lr-menu-item {
+    padding-left:50px;
+}
+.lr-second-menu-list  .lr-menu-item-arrow .fa-angle-left {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.lr-second-menu-list .open  .lr-menu-item-arrow .fa-angle-left {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.lr-three-menu-list {
+    display: block;
+}
+
+
+/*tabs条*/
+.lr-frame-tabs {
+    top:46px;
+    padding:0px 30px 0px 180px;
+    background-color:#fff;
+    z-index:1;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-bottom: 1px solid #d2d3d4;
+}
+.lr-frame-tabs-wrap {
+    height:30px;
+}
+.lr-frame-tabItem {
+    height:29px;
+    line-height:29px;
+    background:#fff;
+    margin-left:0px;
+}
+.lr-frame-tabItem i {
+    color:#666;
+}
+.lr-frame-tabItem.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    bottom: 1px\9;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #4aa6fc;
+}
+
+.lr-frame-tabItem.active .text {
+    font-weight:bold;
+}
+.lr-frame-tabItem .reomve{
+    top: 8px;
+    right: 4px;
+}
+
+
+/*个人设置和头像*/
+.lr-frame-personCenter {
+    top:0;
+    right:10px;
+    height:46px;
+    line-height:46px;
+}
+.lr-frame-personCenter > a {
+    color:#fff;
+}
+.lr-frame-personCenter >.dropdown-toggle> img {
+    border: 2px solid #fff;
+    margin-top:10px;
+}
+.lr_frame_fullscreen {
+    top: 46px;
+    color:#666;
+}
+.lr_frame_fullscreen a {
+    color:#666;
+}
+
+/*功能窗口*/
+.lr-frame-main {
+    padding:76px 0px 0px 180px;
+    background:#F0F3F4;
+}
+
+
+
+/*滚动条*/
+.lr-frame-menu .mCS-minimal-dark.mCSB_scrollTools_horizontal {
+    top:0px;
+}
+.lr-frame-tabs .mCS-minimal-dark.mCSB_scrollTools_horizontal {
+    top:24px;
+}
+/*风尚版独有-菜单缩进按钮*/
+.lr-frame-menu-btn {
+    position:absolute;
+    left:0;
+    top:46px;
+    height:30px;
+    line-height:30px;
+    width:179px;
+    text-align:center;
+    font-size:18px;
+    cursor:pointer;
+    color:#666;
+    background:#f2f3f4;
+    border-bottom:1px solid #e1e3e4;
+    z-index:3;
+}
+.lr-frame-menu-btn:hover {
+    color:#999;
+}
+
+/*导航缩进*/
+.lr-menu-closed .lr-second-menu-wrap {
+     width:50px;
+}
+
+.lr-menu-closed .lr-second-menu-wrap span,
+.lr-menu-closed .lr-second-menu-wrap .lr-menu-item-arrow{
+    display:none;
+}
+
+.lr-menu-closed .lr-second-menu-wrap a {
+    padding:0px;
+    text-align:center;
+}
+.lr-menu-closed .lr-second-menu-wrap .lr-menu-item-icon {
+    margin:0px;
+}
+
+.lr-menu-closed .lr-frame-menu-btn{
+   -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    width:50px;
+}
+
+.lr-menu-closed .lr-frame-main {
+    padding:76px 0px 0px 50px;
+}
+.lr-menu-closed .lr-frame-tabs {
+    padding-left: 50px;
+}
+

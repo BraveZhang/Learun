@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "选项卡添加";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <input id="id" type="hidden" />
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">选项卡名称<font face="宋体">*</font></div>
+        <input id="text" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">选项卡序号<font face="宋体">*</font></div>
+        <input id="sort" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/TabEditForm.js")
+

@@ -1,0 +1,22 @@
+﻿.lr-crminvoice-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 54px;
+}
+
+    .lr-crminvoice-page .lr-crminvoice-addbtn {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 54px;
+        padding: 5px;
+        background-color: #eee;
+    }
+
+        .lr-crminvoice-page .lr-crminvoice-addbtn button {
+            margin: 0px;
+        }
+
+
